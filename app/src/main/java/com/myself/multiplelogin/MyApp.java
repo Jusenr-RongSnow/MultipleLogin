@@ -2,8 +2,6 @@ package com.myself.multiplelogin;
 
 import android.app.Application;
 
-import com.tencent.stat.StatConfig;
-
 
 /**
  * Description:
@@ -22,6 +20,6 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
         //初始化
-        StatConfig.setAppKey(this, "Aqc" + APP_ID);
+//        StatConfig.setAppKey(this, "Aqc" + APP_ID);
     }
 }

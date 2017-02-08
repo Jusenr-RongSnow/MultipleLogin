@@ -58,15 +58,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Tencent类是SDK的主要实现类，开发者可通过Tencent类访问腾讯开放的OpenAPI。
-        // 其中APP_ID是分配给第三方应用的appid，类型为String。
-        mTencent = Tencent.createInstance(MyApp.APP_ID, this.getApplicationContext());
-        // 1.4版本:此处需新增参数，传入应用程序的全局context，可通过activity的getApplicationContext方法获取
-        mUiListener = new BaseUiListener();
-        mApiListener = new BaseApiListener();
+//        // Tencent类是SDK的主要实现类，开发者可通过Tencent类访问腾讯开放的OpenAPI。
+//        // 其中APP_ID是分配给第三方应用的appid，类型为String。
+//        mTencent = Tencent.createInstance(MyApp.APP_ID, this.getApplicationContext());
+//        // 1.4版本:此处需新增参数，传入应用程序的全局context，可通过activity的getApplicationContext方法获取
+//        mUiListener = new BaseUiListener();
+//        mApiListener = new BaseApiListener();
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         mClient = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+//        login();
     }
 
     @Override
